@@ -12,7 +12,7 @@ Trong bài viết này, tôi sẽ tiến hành xây dựng một ứng dụng we
 
 Nó trông thực sự rất đơn giản nhưng ứng dụng này lại được xây dựng và triển khai tự động trên dịch vụ nền tảng điện toán đám mây sử dụng GitHub Actions.
 
-Nó có một API trả về một lời chào đơn giản nhưng không cần máy chủ như truyền thống mà nó được triển khai trên dịch vụ nền tảng điện toán đám mây của Microsoft Azure Portal và được thực hiện bởi dịch vụ Azure Static Web Apps.
+Nó có một API trả về một lời chào đơn giản nhưng không cần máy chủ như truyền thống mà nó được triển khai theo mô hình thực thi điện toán đám mây của Microsoft Azure Portal và được thực hiện bởi dịch vụ Azure Static Web Apps.
 
 Sau bài thực hành này, bạn có thể thực hiện một số điều sau đây với Azure Static Web Apps:
 
@@ -30,5 +30,21 @@ Azure Static Web Apps xuất bản ứng dụng web cho người dùng bằng c�
 - Có tài khoản [Azure](https://portal.azure.com/)
 - Môi trường viết mã [Visual Studio Code](https://code.visualstudio.com/)
 - Phần mềm quản lý mã nguồn [Git for Windows](https://git-scm.com/downloads) hoặc [Git for macOS](https://git-scm.com/download/mac). Nếu bạn đã cài đặt Git, bạn có thể tải phiên bản phát triển mới nhất thông qua chính lệnh Git: ```git clone https://github.com/git/git```.
-- [Azure Static Web Apps extension cho Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps)
+- [Azure Static Web Apps extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps) cho Visual Studio Code
+- [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) cho Visual Studio Code
 
+- [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) cho Visual Studio Code
+
+### Tạo một kho lưu trữ
+Bài viết này sử dụng kho lưu trữ mẫu (template) GitHub để giúp bạn dễ dàng bắt đầu. Mẫu có một ứng dụng web tĩnh rất đơn giản để chúng ta có thể sử dụng như một điểm khởi đầu.
+
+> 1. Đảm bảo rằng bạn đã đăng nhập vào GitHub và điều hướng đến vị trí sau để tạo một kho lưu trữ mới:
+https://github.com/chuyentt/paas-basic/generate - nếu liên kết không hoạt động, vui lòng đăng nhập vào GitHub và thử lại.
+> 2. Đặt tên cho Repository name (kho lưu trữ mã nguồn) của bạn là:
+`my-first-static-web-app`
+
+Chọn **Create repository from template**.
+
+### Sao chép kho lưu trữ
+Với kho lưu trữ được tạo trong tài khoản GitHub của bạn, hãy sao chép dự án vào máy cục bộ của bạn bằng lệnh sau.
+```git clone https://github.com/<YOUR_ACCOUNT_NAME>/my-first-static-web-app.git```
