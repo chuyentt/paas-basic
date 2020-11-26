@@ -43,8 +43,25 @@ https://github.com/chuyentt/paas-basic/generate - nếu liên kết không hoạ
 > 2. Đặt tên cho Repository name (kho lưu trữ mã nguồn) của bạn là:
 `my-first-static-web-app`
 
-Chọn **Create repository from template**.
+Chọn **`Create repository from template`**.
 
 ### Sao chép kho lưu trữ
-Với kho lưu trữ được tạo trong tài khoản GitHub của bạn, hãy sao chép dự án vào máy cục bộ của bạn bằng lệnh sau.
-```git clone https://github.com/<YOUR_ACCOUNT_NAME>/my-first-static-web-app.git```
+Với kho lưu trữ được tạo trong tài khoản GitHub của bạn, hãy sao chép dự án vào máy cục bộ của bạn bằng lệnh sau với công cụ giao tiếp dòng lệnh `Command Prompt` trên Windows hoặc `terminal` trên macOS.
+`git clone https://github.com/<YOUR_ACCOUNT_NAME>/my-first-static-web-app.git`
+
+Hoặc sao chép nó về bằng công cụ `Visual Studio Code` bằng cách đi đến menu *`View > Command Palette...`* rồi nhập `Git: Clone` sau đó cung cấp URL của kho lưu trữ hoặc chọn nguồn kho lưu trữ `https://github.com/<YOUR_ACCOUNT_NAME>/my-first-static-web-app.git`.
+
+Chờ một lúc và mở nó ra để tiếp tục viết mã, đây thực sự là một trang web tĩnh đơn giản nhất để chúng ta bắt đầu. Nó chỉ có một tệp `index.html` chứa vài dòng văn bản được cấu trúc bằng mã của ngôn ngữ `HTML`, nó sẽ trả về một vài dòng văn bản trên trình duyệt cùng với một tệp mã CSS dùng để trình bày kiểu dáng cho những văn bản đó (nếu các bạn đã biết về HTML/CSS/JavaScript sẽ là một lợi thế).
+
+Chúng ta có thể xem trước trang web này trên máy chủ cục bộ bằng cách sử dụng một `Extensions` (thành phần mở rộng) cho `Visual Studio Code` có tên là `Live Server`.
+
+Chúng ta sẽ đi đến tệp `index.html`, click chuột phải và chọn `Open with Live Server`,  điều này sẽ mở một tab mới trên trình duyệt và hiển thị ứng dụng web.
+
+Nếu tôi làm một số nhỏ thay đổi đối với tệp HTML ngay sau dòng ghi chú:
+```html
+<!-- TODO: Your code here... -->
+<p class="center">Loading message from API:
+    <strong id="message">Hello from the API</strong>
+</p>
+```
+sau đó lưu lại thì trình duyệt sẽ phản ánh những thay đổi của tôi, và bây giờ tôi có thể `commit` (ghi lại) những thay đổi này đối với vào kho mã nguồn của GitHub cục bộ, sau đó `push` (đẩy) lên máy chủ GitHub.
