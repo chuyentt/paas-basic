@@ -67,4 +67,10 @@ Nếu tôi làm một số nhỏ thay đổi đối với tệp HTML ngay sau d�
 Sau đó lưu lại thì trình duyệt sẽ phản ánh những thay đổi so với những gì đã chỉnh sửa, và bây giờ chúng ta có thể đi đến `Source Control` (kiểm soát mã nguồn) để `Commit` (ghi lại) những thay đổi này đối với vào kho mã nguồn của GitHub trong cơ sở dữ liệu cục bộ, tiếp theo chúng ta chọn `Push` (đẩy) lên máy chủ GitHub.
 > Lưu ý: Ở bước này, các bạn có thể gặp vấn đề của việc xác thực Visual Studio Code với GitHub, hãy đọc kỹ thông báo để xử lý chúng và bạn sẽ có thêm chút kinh nghiệm khi làm việc với GitHub.
 
+### Tạo một ứng dụng web tĩnh
+1. Bên trong `Visual Studio Code`, chọn biểu tượng Azure trong thanh hoạt động để mở cửa sổ tiện ích mở rộng Azure extensions.
+
+> Lưu ý: Đăng nhập Azure và GitHub là bắt buộc. Nếu bạn chưa đăng nhập vào Azure và GitHub từ Visual Studio Code, tiện ích mở rộng sẽ nhắc bạn đăng nhập vào cả hai trong quá trình tạo.
+
+2. Đặt chuột lên nhãn Static Web App và chọn dấu cộng `+`.
 
