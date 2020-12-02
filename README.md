@@ -51,7 +51,7 @@ Với kho lưu trữ được tạo trong tài khoản GitHub của bạn, hãy 
 
 Hoặc sao chép nó về bằng công cụ `Visual Studio Code` bằng cách đi đến menu *`View > Command Palette...`* rồi nhập `Git: Clone` sau đó cung cấp URL của kho lưu trữ hoặc chọn nguồn kho lưu trữ `https://github.com/<YOUR_ACCOUNT_NAME>/my-first-static-web-app.git`.
 
-Chờ một lúc và mở nó ra để tiếp tục viết mã, đây thực sự là một trang web tĩnh đơn giản nhất để chúng ta bắt đầu. Nó chỉ có một tệp `index.html` chứa vài dòng văn bản được cấu trúc bằng mã của ngôn ngữ `HTML`, nó sẽ trả về một vài dòng văn bản trên trình duyệt cùng với một tệp mã CSS dùng để trình bày kiểu dáng cho những văn bản đó (nếu các bạn đã biết về HTML/CSS/JavaScript sẽ là một lợi thế).
+Chọn nơi lưu trữ kho mã nguồn trên máy tính, chờ một lúc và mở nó ra để tiếp tục viết mã, đây thực sự là một trang web tĩnh đơn giản nhất để chúng ta bắt đầu. Nó chỉ có một tệp `index.html` chứa vài dòng văn bản được cấu trúc bằng mã của ngôn ngữ `HTML`, nó sẽ trả về một vài dòng văn bản trên trình duyệt cùng với một tệp mã CSS dùng để trình bày kiểu dáng cho những văn bản đó (nếu các bạn đã biết về HTML/CSS/JavaScript sẽ là một lợi thế).
 
 Chúng ta có thể xem trước trang web này trên máy chủ cục bộ bằng cách sử dụng một `Extensions` (thành phần mở rộng) cho `Visual Studio Code` có tên là `Live Server`.
 
@@ -69,8 +69,13 @@ Sau đó lưu lại thì trình duyệt sẽ phản ánh những thay đổi so 
 
 ### Tạo một ứng dụng web tĩnh
 1. Bên trong `Visual Studio Code`, chọn biểu tượng Azure trong thanh hoạt động để mở cửa sổ tiện ích mở rộng Azure extensions.
+![](https://docs.microsoft.com/en-us/azure/static-web-apps/media/getting-started/extension-azure-logo.png)
 
 > Lưu ý: Đăng nhập Azure và GitHub là bắt buộc. Nếu bạn chưa đăng nhập vào Azure và GitHub từ Visual Studio Code, tiện ích mở rộng sẽ nhắc bạn đăng nhập vào cả hai trong quá trình tạo.
 
 2. Đặt chuột lên nhãn Static Web App và chọn dấu cộng `+`.
+![](https://docs.microsoft.com/en-us/azure/static-web-apps/media/getting-started/extension-create-button.png)
 
+3. The command palate opens at the top of the editor and prompts you to name your application.
+Khẩu lệnh mở ở đầu trình chỉnh sửa và nhắc bạn đặt tên cho ứng dụng của mình.
+Type my-first-static-web-app and press Enter.
